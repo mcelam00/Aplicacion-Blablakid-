@@ -1,0 +1,9 @@
+
+
+cambiar el menu
+el get y el set se comprueban juntos en el mismo test
+para anyadir un niño lo compruebo 
+los test para comprobar el metodo add de kid no los hemos hecho tipo boolean (porque tenemos excepciones) entonces lo comprobamos por todo slos medios que se me ocurran, buscandolo entonces dentro del codigo del metodo anyadir busco al que voy a anyadir entonces el buscar tienen que no encontrarlo (assert) luego comprubeo que el numero de ninos es tres lugo lo añado, miro que la busqueda lo encuentra y que finalente se encuentran 4 ninyos. 
+test que me de una extepcion niño repertido, ya no caben mas ninyos
+
+

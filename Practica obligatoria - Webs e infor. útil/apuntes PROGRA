@@ -1,0 +1,66 @@
+En blablakid viven los padres y los hijos 
+es como la entrada de nuestra aplicacioon a la que le vamos acoplando cosas, una interfaz de usuario que es de tipo text, que está asociada a blablaKid: ¿Cómo las asociamos?
+
+Como a mi core (main) le da igual la interfaz que yo le ponga, 
+mi interfaz de usuario mantiene una referencia a un objeto de tipo blablakid
+Mi interfaz de usuario va a recibir una blablakid y se lo va a guardar
+Cada una de las opciones ha de tener su correspondiente en blablakid
+luego etngo que añadir un eliminar para niños para padres para rides y asi pero esto tiene que estar en la INTERFAZ de bllalakid
+
+Las excepciones se van propagando, entonces el comentario de extepcion se generaran en todo nuestro diseño y al llegar a la classe interfaz de usuario se van a a capturar, en la clase interfaz de usuario que sera la que tenga los try catch
+
+
+
+
+MI MAIN:
+
+
+class BlablaKidMain{
+	public static void main(String args[]){//desde el unico parametro que recibe el main viene a traves del args; en args[0] me viene el 3 como string
+		Kids kids;
+		kids = new Kids (num);//necesitamos ese num de hijos que nos llega desde la linea de usuarios
+//antes de que corra la interfaz de usuario, ejecutamos desde la linea de comandos pero ejecutamos con java............. .nombredelpaqueteBlablaKidMain 3 (le pasamos el máximo de hijos), ha de funcionar si lo ejecuto con el 3 y si no, entonces necesito asegurarme de que args de 0 existe (si no da un nullpointersexception), tengo que pregutar por la lenght de args, si la lenghts de args es 1, si si es así, si hay parametro y lugo hago el parcheado 
+
+
+
+
+
+
+
+if(args length != 1){
+system.out.println("mensaje del tipo error en los parametros de entrada la sintaxis es blablakids +parametros (numero maximo de hijos)")
+}else{//ya estoy seguro de que existe entonces hago el parcheado para pasar a entero
+
+	try{
+		num=Integer.parseInt(args[0]); //si en vez de un numero van y me meten una x 
+	}catch(NumberFormatException){
+		System.out.println("le tiro el mensaje de la sintaxis de nuevo");
+	}
+}
+
+//el main no se puede salir de sus responsabilidades que seran la de checkear los parametros, no se hace todo en el main, no se puede poner codigo, solo analizar los parametros e inicializar la applicación
+Las excepciones las uso cuando se ha generado un error muy dentro del codigo y no puedo hablar con el usuario y se van propagando hasta un sitio donde si se pueda hablar por ejemplo en text ui que le llegaran y de pronto las muestra con un System out println en el main tambien me hablo con el usuario asi es que no hay problema en poner system.outs .println
+
+EL MAIN QUEDA ASI ENTONCES:
+
+EL MAIN SE OCUPA DE LA SINTAXIS NO DE LA SEMANTICA (EL VALOR DEL INT DE num o si está inicializado o si no)
+
+class BlablaKidMain{
+	public static void main(String args[]){
+		int num;
+		--Le pongo lo de los argumentos--
+		BlablaKid blablaKid = new BlablaKid(num);
+		TestUI textUI = new TextUI(blablaKid);
+		textUI.start();
+	}
+}
+
+
+
+
+
+
+
+
+		
+
